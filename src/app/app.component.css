@@ -1,0 +1,29 @@
+
+
+div.scrollmenu {
+    background-color: #000000;
+    overflow: auto;
+  
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: #F5E5E5;
+    text-align: center;
+    padding: 14px;
+
+}
+
+button{
+    color: #F5E5E5;
+    background-color: #000000;
+    
+}
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+body{
+
+    margin: -8px -8px;
+}
+

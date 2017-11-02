@@ -1,0 +1,31 @@
+<body>
+ 
+  <br><br><br>
+  <div class="container">
+    <section id="products">
+      <div class="row">
+
+        <td *ngFor="let p of productInfo">
+        <div class="col-md-3">
+          <div class="thumbnail">
+          <img src="{{p.p_img}}" width="300px" height="450px">
+            <div class="caption">
+              <h4>{{p.productName}}</h4>
+              <h4 ><button type="button" class="btn btn-info" style="color:black"> ₹ {{p.price}}</button>
+                
+              </h4>
+              <!-- <p>{{p.productId}}</p> -->
+              
+                
+                  <button type="button" class="btn btn-success" (click)="addToCart(p.productName,p.price,p.p_img,p.description)"> <span class="glyphicon glyphicon-shopping-cart">
+                    </span> Add to Cart</button>
+                 
+            </div>
+          </div>
+        </div>
+        </td>
+      
+      </div>
+    </section>
+  </div>
+</body>

@@ -1,0 +1,35 @@
+  <body>
+  <br>
+  <br>
+  
+  <div class="container">
+    <h2>LOGIN</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" #email name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" #password name="pwd">
+      </div>
+      Not a member?  <a [routerLink]="['/Signup']">Signup</a>
+      
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="button" class="btn btn-success" (click)="login(email.value,password.value)">Login</button>
+    
+      <button class="loginBtn loginBtn--facebook" (click)="FbLogin()">
+        Login with Facebook
+      </button>
+      
+      <button class="loginBtn loginBtn--google">
+        Login with Google
+      </button>   
+      <br>
+    </form>
+  </div>
+   
+  
+</body>
